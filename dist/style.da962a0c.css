@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#div1 {
+  position: fixed;
+  right: 300px;
+  top: 50px;
+}
+#div1::before {
+  position: absolute;
+  content: "";
+  display: block;
+}
+#div1::after {
+  position: absolute;
+  content: "";
+  display: block;
+}
+@media (max-width: 500px) {
+  #html {
+    height: 60vh;
+    overflow: auto;
+    background: rgb(247, 247, 247);
+    border-radius: 0 0px 20px 20px;
+  }
+
+  .wrapper {
+    height: 40vh;
+  }
+
+  #div1 {
+    position: relative;
+    top: 40px;
+    left: 50%;
+    transform: translate(-50%);
+  }
+}
